@@ -25,4 +25,5 @@ As long as you have the .env file with the key you shoudl be okay to run the nex
 
 Make sure to run os library at the top of of the notebook 
 Now you can run the streamlit app without any errors. 
+
 Good luck.........
