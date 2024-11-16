@@ -29,3 +29,8 @@ Make sure to run os library at the top of of the notebook
 Now you can run the streamlit app without any errors. 
 
 Good luck.........
+
+
+To see the full code go to this link https://nbviewer.org/
+
+Paste in the url for the girhub, you should be able to see the entire code render
