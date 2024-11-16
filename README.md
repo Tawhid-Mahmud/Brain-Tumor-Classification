@@ -21,9 +21,11 @@ The last few lines of code will create a link usng ngrok link with local host th
 
 You also need a .env file with google AI api key
 that code is commented out, once you run that cell of code. Comment it out again 
-As long as you have the .env file with the key you shoudl be okay to run the next few lines of cells.
+
+As long as you have the .env file with the key you should be okay to run the next few lines of cells.
 
 Make sure to run os library at the top of of the notebook 
+
 Now you can run the streamlit app without any errors. 
 
 Good luck.........
