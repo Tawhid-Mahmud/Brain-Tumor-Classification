@@ -1,7 +1,5 @@
 # Brain-Tumor-Classification
 
-# Brain Tumor Classification
-
 A deep learning project that uses both Xception and custom CNN models to classify brain tumors from MRI images.
 
 ## 🚀 Quick Start
