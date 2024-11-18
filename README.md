@@ -1,36 +1,64 @@
 # Brain-Tumor-Classification
 
-NOT SURE WHY COLAB FILE IS NOT LOADING IN GITHUB
+# Brain Tumor Classification
 
-To run this code please download the notebook 
-Open Google Colab and upload the notebook 
-Click on runtime -> change runtime type -> T4 GPU
-This will run and train models on GPU. Makes the runtime much lower
+A deep learning project that uses both Xception and custom CNN models to classify brain tumors from MRI images.
 
-Once you are ready with the set up run all the files. It will take some time to 
-get the models ready 
+## 🚀 Quick Start
 
-First models will run on 5 epochs and it will save a file names "xception_model.weights.h5"
-Second models is for custom CNN that runs on 8 epochs and saves a file named "cnn_model.h5"
+### Google Colab Setup
+1. Download the notebook
+2. Open [Google Colab](https://colab.research.google.com/)
+3. Upload the notebook
+4. Set runtime to T4 GPU:
+   - Runtime -> Change runtime type -> T4 GPU
+   - This significantly reduces training time
 
-These two files are essential for running the streamlit app 
-Rest of the code is to render a streamlit app using python
+### 🏃‍♂️ Running the Project
 
-once you have the two files saved or downloaded you can use them to run the streamlit file 
-The last few lines of code will create a link usng ngrok link with local host that you can see on your browser
+#### Model Training
+The project trains two models:
+1. **Xception Model** 
+   - Runs for 5-10 epochs
+   - Saves as `xception_model.weights.h5`
 
-You also need a .env file with google AI api key
-that code is commented out, once you run that cell of code. Comment it out again 
+2. **Custom CNN Model**
+   - Runs for 10-12 epochs
+   - Saves as `cnn_model.h5`
 
-As long as you have the .env file with the key you should be okay to run the next few lines of cells.
+> ⚠️ Both model files are required for the Streamlit application
 
-Make sure to run os library at the top of of the notebook 
+#### Environment Setup
+1. Create a `.env` file
+2. Add your Google AI API key:
+   ```
+   GOOGLE_AI_API_KEY=your_key_here
+   ```
+   > Note: Remember to comment out the API key code cell after running
 
-Now you can run the streamlit app without any errors. 
+#### Running Streamlit App
+1. Ensure you have both model files (`xception_model.weights.h5` and `cnn_model.h5`)
+2. Run the OS library imports at the notebook start
+3. Execute the Streamlit cells
+4. Access the app through the ngrok-generated link
 
-Good luck.........
+## 🔍 View Complete Code
+If the Colab notebook isn't loading in GitHub:
+1. Visit [nbviewer.org](https://nbviewer.org/)
+2. Paste the GitHub notebook URL
+3. View the fully rendered notebook
 
+## 🛠️ Prerequisites
+- Python 3.x
+- TensorFlow
+- Streamlit
+- Google Colab account
+- `.env` file with Google AI API key
 
-To see the full code go to this link https://nbviewer.org/
+## ❗ Important Notes
+- Keep API key secure and commented out when not in use
+- Both model files must be present for Streamlit app functionality
+- GPU runtime is recommended for optimal performance
 
-Paste in the url for the girhub, you should be able to see the entire code render
+## 📫 Support
+If you encounter any issues or have questions, please open an issue in this repository.
